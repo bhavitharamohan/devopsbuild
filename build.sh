@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set image name and tags
+# Set image name
 IMAGE_NAME="bhavidocker/dev-app"
 TAG="latest"
 
