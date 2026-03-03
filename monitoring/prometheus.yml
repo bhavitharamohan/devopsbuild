@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+
+rule_files:
+  - "alert.rules.yml"
+
+scrape_configs:
+  - job_name: "frontend-app"
+    metrics_path: /
+    static_configs:
+      - targets: ["3.237.199.90:3000"]
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
