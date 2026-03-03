@@ -1,8 +1,8 @@
 global:
   smtp_smarthost: 'smtp.gmail.com:587'
-  smtp_from: 'bhavitharamohan@gmail.com'
-  smtp_auth_username: 'bhavitharamohan@gmail.com'
-  smtp_auth_password: 'Nikky@1006'
+  smtp_from: '******@gmail.com'
+  smtp_auth_username: '********@gmail.com'
+  smtp_auth_password: '*******'
 
 route:
   receiver: 'email-alert'
@@ -10,4 +10,4 @@ route:
 receivers:
   - name: 'email-alert'
     email_configs:
-      - to: 'bhavitharamohan@gmail.com'
+      - to: '***********@gmail.com'
